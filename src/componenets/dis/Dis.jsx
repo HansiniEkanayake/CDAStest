@@ -156,7 +156,6 @@ export default class Dis extends Component {
             </div>
 
 
-
         <p id="para1">
             fdsyudfvj;askvbgfjvbvdjddddddddddddddddddddddddddddddddddddddddddd
             bdvdkvkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
