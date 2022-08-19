@@ -9,6 +9,7 @@ import axios from "axios";
 const { Content } = Layout;
 const { Title } = Typography;
 
+
 export default class Login extends Component {
 
     constructor(props) {
@@ -45,7 +46,7 @@ export default class Login extends Component {
                         message: 'Login Successful',
                         duration:10,
                         description:
-                          'Hello , Jenny  welcome to PMS.',
+                          'Hello ,   welcome to CROP DISEASE ALERT SYSTEM.',
                       });
                     localStorage.setItem("user_id",res.data.user._id);
                     localStorage.setItem("name",res.data.user.Fname + " " + res.data.user.Lname);
@@ -96,14 +97,14 @@ export default class Login extends Component {
                                         padding: 0,
                                         margin: 0
                                     }}>
-                                    PMS Medical Staff Login
+                                    FARMCARE
                                 </Title>
                             </Row>
                             <Row justify="center" align="bottom" style={{
                                 padding: 0,
                                 marginBottom: 20
                             }}>
-                                <Title level={4} type="secondary">Your Health is Our Concern</Title>
+                                <Title level={4} type="secondary">Prevent Diseases for Qulity Yeild</Title>
                             </Row>
                             <Form
                                 name="normal_login"
@@ -126,7 +127,7 @@ export default class Login extends Component {
                                         },
                                     ]}
                                 >
-                                    <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username/Email" />
+                                    <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
                                 </Form.Item>
                                 <Form.Item
                                     name="password"
@@ -166,7 +167,7 @@ export default class Login extends Component {
                                     </Col>
                                     <Col span={4}>
                                         <Form.Item>
-                                            <a className="login-form-forgot" href="">
+                                            <a className="login-form-forgot" href="../register/Register.jsx">
                                                 Sign Up
                                             </a>
                                         </Form.Item>

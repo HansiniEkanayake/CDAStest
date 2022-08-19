@@ -90,16 +90,16 @@ export default class Register extends Component {
                 role: values.role
             }
 
-            const url = "http://localhost:8090/staff/register";
+            const url = "http://localhost:8090/areaAgent/register";
             axios.post(url, data).then((res) => {
                 if(res.data.status === 201){
                     notification['success']({
                         message: 'Successfully Registered',
                         duration:10,
                         description:
-                          'You have registered as a nurse into the system.Please login to use the system.',
+                          'You have registered as a agent into the system.Please login to use the system.',
                       });
-                      setTimeout(function(){ window.location.replace('/staff-login'); }, 5000);
+                      setTimeout(function(){ window.location.replace('/Login'); }, 5000);
                     
                 }
                 else if(res.data.status === 401){
@@ -126,13 +126,13 @@ export default class Register extends Component {
             <React.Fragment className="general-background">
                 <Row justify="start" align="bottom">
                     <Col span={1}>
-                        <Button type="link" icon={<ArrowLeftOutlined style={{ fontSize: '30px', color: '#08c' }}/> } style={{marginBottom: 30 , marginLeft:20}}/>
+                        <Button type="link" icon={<ArrowLeftOutlined style={{ fontSize: '30px', color: '#08c' }} /> } style={{marginBottom: 30 , marginLeft:20}} href={"../homepage"} />
                     </Col>
-                    <Col span={2}>
-                        <Title style={{marginTop: 20}}>PMS</Title>
+                    <Col span={4}>
+                        <Title style={{marginTop: 20}}>FARMCARE</Title>
                     </Col>
                     <Col span={10}>
-                        <Title level={4} type="secondary" style={{marginBottom: 23}}>Welcome to PMS Patient Management System</Title>
+                        <Title level={4} type="secondary" style={{marginBottom: 23}}>Welcome to FARMCARE Crop Disease Alert System!</Title>
                     </Col>
                 </Row>
                 <Row justify="space-around" align="middle">
@@ -156,14 +156,14 @@ export default class Register extends Component {
                                         padding: 0,
                                         margin: 0
                                     }}>
-                                    PMS Medical Staff Registration
+                                    FARMCARE Registration
                                 </Title>
                             </Row>
                             <Row justify="center" align="bottom" style={{
                                         padding: 0,
                                         marginBottom: 20
                                     }}>
-                                <Title level={4} type="secondary">Register with your medical staff role</Title>
+                                <Title level={4} type="secondary">Register with your area</Title>
                             </Row>
                             <Form
                                 {...formItemLayout}
@@ -290,18 +290,18 @@ export default class Register extends Component {
                                     <Col span={11}>
                                         <Form.Item
                                             name="role"
-                                            label="Medical Staff Role"
+                                            label="Area"
                                             rules={[
                                                 {
                                                     required: true,
-                                                    message: 'Please select your Medical Staff Role!',
+                                                    message: 'Please select your Area!',
                                                 },
                                             ]}
                                         >
-                                            <Select  onChange={this.onRoleSelect} defaultValue="Select role">
-                                                <Option value="Nurse">Nurse</Option>
-                                                <Option value="Laboratory Staff">Laboratory Staff</Option>
-                                                <Option value="Pharmacist" >Pharmacist</Option>
+                                            <Select  onChange={this.onRoleSelect} defaultValue="Select your area">
+                                                <Option value="Nurse">ANURADHAPURA</Option>
+                                                <Option value="Laboratory Staff">MELSIRIPURA</Option>
+                                                <Option value="Pharmacist" >DHAMBULLA</Option>
                                             </Select>
                                         </Form.Item>
 

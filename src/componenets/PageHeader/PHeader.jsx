@@ -43,21 +43,13 @@ class PHeader extends Component {
         return (
             <PageHeader
                 onBack={() => window.history.back()}
-                title="PMS"
+                title="FARMCARE"
                 tags={<Tag color="green">Running</Tag>}
-                subTitle="Welcome to the PMS patinet managemnt systems"
+                subTitle="Welcome to the FARMCARE Crop Disease Alert System!"
             >
                 <Row>
                     <Statistic title="Current Time" value={this.state.h + ":" + this.state.m + ":" + this.state.s} />
-                    <Statistic
-                        title="Total Patients"
-                        prefix=""
-                        value={this.state.pat}
-                        style={{
-                            margin: '0 32px',
-                        }}
-                    />
-                    <Statistic title="Total Doctors" prefix="" value={this.state.doc} />
+                    
                 </Row>
             </PageHeader>
         );

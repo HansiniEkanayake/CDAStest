@@ -1,0 +1,38 @@
+.a{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: rgb(167, 233, 167);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.a:hover{
+    color: orangered;
+}
+
+a.btn{
+  border: 2px solid rgb(255, 255, 255) ;
+  border-radius: 5px;
+  margin-left: 1rem;
+  font-weight: 500;
+  padding: 5px 8px;  
+}
+
+a.btn-dark{
+    border: 2px solid rgb(167, 233, 167) ;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    text-decoration: none; 
+    font-size: large;
+    font-weight: 800;
+}
+
+a.btn-orange {
+    border: 2px solid transparent;
+    background: rgb(5, 68, 47);
+    color: rgb(167, 233, 167);
+    text-decoration: none; 
+    font-size: large;
+    font-weight: 300;
+
+}
