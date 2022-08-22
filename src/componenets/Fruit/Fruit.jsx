@@ -76,7 +76,7 @@ export default class Fruit extends Component {
                     <div class="card-body">
                         <h5 class="card-title">Banana</h5>
                         <p class="card-text">
-                        දිවුල් ශාකය ශ්‍රි ලංකාවේ වියළි කලාපයේ හා අතරමැදි කලාප වල බහුලව දක්නට ලැබේ.Belongs to fruit family
+                        Belongs to fruit family
                         </p>
                     </div>
                     <div class="card-footer">
