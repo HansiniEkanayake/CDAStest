@@ -25,6 +25,8 @@ import Alertform from './componenets/alertform/Alertform';
 import CropDis from './componenets/cropdis/CropDis';
 import Dis from './componenets/dis/Dis';
 import Pest from './componenets/pest/Pest';
+import Pm from './componenets/disDetails/pm';
+import Sm from './componenets/disDetails/sm';
 
 
 
@@ -92,6 +94,14 @@ function App() {
 
           <Route path="/Pest">
                  <Pest/>
+          </Route>
+
+          <Route path="/Pm">
+                 <Pm/>
+          </Route>
+
+          <Route path="/Sm">
+                 <Sm/>
           </Route>
 
 

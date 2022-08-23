@@ -59,7 +59,7 @@ export default class Fruit extends Component {
                     <div class="card-body">
                         <h5 class="card-title">Avacado</h5>
                         <p class="card-text">
-                        Belongs to fruit family
+                        Avocado is a medium-sized, evergreen tree in the laurel family, native to the Americas. It is widely cultivated for its large, fleshy fruit. The tree likely originated in the highland regions of south-central Mexico to Guatemala. Its fruit is botanically a large berry containing a single large seed.
                         </p>
                     </div>
                     <div class="card-footer">
@@ -76,7 +76,7 @@ export default class Fruit extends Component {
                     <div class="card-body">
                         <h5 class="card-title">Banana</h5>
                         <p class="card-text">
-                        Belongs to fruit family
+                        A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called "plantains", distinguishing them from dessert bananas.
                         </p>
                     </div>
                     <div class="card-footer">
@@ -90,7 +90,7 @@ export default class Fruit extends Component {
                     <div class="card-body">
                         <h5 class="card-title">Watermelon</h5>
                         <p class="card-text">
-                        Belongs to fruit family
+                        Watermelon is a flowering plant species of the Cucurbitaceae family and the name of its edible fruit. A scrambling and trailing vine-like plant, it is a highly cultivated fruit worldwide, with more than 1,000 varieties.
 
                         </p>
                     </div>
@@ -103,9 +103,9 @@ export default class Fruit extends Component {
                     <div class="card h-100">
                     <img src={Papaw} class="card-img-top" alt="Palm Springs Road"/>
                     <div class="card-body">
-                        <h5 class="card-title">Papaw</h5>
+                        <h5 class="card-title">Papaya</h5>
                         <p class="card-text">
-                        Belongs to fruit family
+                        The papaya, papaw, or pawpaw is the plant Carica papaya, one of the 22 accepted species in the genus Carica of the family Caricaceae. It was first domesticated in Mesoamerica, within modern-day southern Mexico and Central America.
                         </p>
                     </div>
                     <div class="card-footer">
@@ -122,7 +122,7 @@ export default class Fruit extends Component {
                     <div class="card-body">
                         <h5 class="card-title">Grapes</h5>
                         <p class="card-text">
-                        Belongs to fruit family
+                        A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis. Grapes can be eaten fresh as table grapes, used for making wine, jam, grape juice, jelly, grape seed extract, vinegar, and grape seed oil, or dried as raisins, currants and sultanas.
                         </p>
                     </div>
                     <div class="card-footer">
@@ -136,7 +136,7 @@ export default class Fruit extends Component {
                     <div class="card-body">
                         <h5 class="card-title">Rambutan</h5>
                         <p class="card-text">
-                        Belongs to fruit family
+                        Rambutan is a medium-sized tropical tree in the family Sapindaceae. The name also refers to the edible fruit produced by this tree. The rambutan is native to Southeast Asia. It is closely related to several other edible tropical fruits including the lychee, longan, pulasan and guinep.
                         </p>
                     </div>
                     <div class="card-footer">
@@ -150,7 +150,7 @@ export default class Fruit extends Component {
                     <div class="card-body">
                         <h5 class="card-title">Guava</h5>
                         <p class="card-text">
-                        Belongs to fruit family
+                        Guava is a common tropical fruit cultivated in many tropical and subtropical regions.
                         </p>
                     </div>
                     <div class="card-footer">
@@ -211,9 +211,9 @@ export default class Fruit extends Component {
                     <div class="card h-100">
                     <img src={Wdapl} class="card-img-top" alt="Skyscrapers"/>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Wood Apple</h5>
                         <p class="card-text">
-                        Belongs to fruit family
+                        Wood Apple is a cure for combating the health problems such as peptic ulcer, constipation, respiratory problems, indigestion, dysentery, diarrhea, diabetes.
                         </p>
                     </div>
                     <div class="card-footer">
@@ -225,9 +225,9 @@ export default class Fruit extends Component {
                     <div class="card h-100">
                     <img src={Passion} class="card-img-top" alt="Los Angeles Skyscrapers"/>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">[assion Fruit]</h5>
                         <p class="card-text">
-                        Belongs to fruit family
+                        Passiflora edulis, commonly known as passion fruit, is a vine species of passion flower native to southern Brazil through Paraguay and northern Argentina. It is cultivated commercially in tropical and subtropical areas for its sweet, seedy fruit.
                         </p>
                     </div>
                     <div class="card-footer">
@@ -239,9 +239,9 @@ export default class Fruit extends Component {
                     <div class="card h-100">
                     <img src={Star} class="card-img-top" alt="Palm Springs Road"/>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Star Fruit</h5>
                         <p class="card-text">
-                        Belongs to fruit family
+                        Star Fruit also known as Kamaranka, is the fruit of Averrhoa carambola, a species of tree native to tropical Southeast Asia.
                         </p>
                     </div>
                     <div class="card-footer">

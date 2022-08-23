@@ -6,9 +6,7 @@ export default class Dis extends Component {
   render() {
     return (
       <div>
-      <div class= "container">
-
-      <div class="container">
+          <div class="container">
             <div class="list-group list-group-light">
 
            
@@ -25,7 +23,7 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-primary">
                 <center>
                     <h2>
-                        Disease 1
+                    White blister/White rust (Albugo candida)
                     </h2>
                 </center>
             </a>
@@ -34,16 +32,16 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-secondary">
                 <center>
                     <h2>
-                        Disease 1
+                    Downy mildews (individual species damage particular crop families)
                     </h2>
                 </center>
             </a >
             
-            <a href="#" target="_blank"
+            <a href={"http://localhost:3000/pm"} target="_blank"
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-success">
                 <center>
                     <h2>
-                        Disease 1
+                    Powdery mildews
                     </h2>
                 </center>
             </a>
@@ -52,7 +50,7 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-danger">
                 <center>
                     <h2>
-                        Disease 1
+                    Clubroot
                     </h2>
                 </center>
             </a>
@@ -61,7 +59,7 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-warning">
                 <center>
                     <h2>
-                        Disease 1
+                    Black rot
                     </h2>
                 </center>
             </a>
@@ -70,7 +68,7 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-info">
                 <center>
                     <h2>
-                        Disease 1
+                    Bacterial canker
                     </h2>
                 </center>
             </a>
@@ -79,7 +77,7 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2  list-group-item-dark">
                 <center>
                     <h2>
-                        Disease 1
+                    Bacterial leaf spot/Bacterial spot
                     </h2>
                 </center>
             </a>
@@ -92,7 +90,7 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-primary">
                 <center>
                     <h2>
-                        Disease 1
+                    Bacterial wilt
                     </h2>
                 </center>
             </a>
@@ -101,7 +99,7 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-secondary">
                 <center>
                     <h2>
-                        Disease 1
+                    Turnip mosaic virus
                     </h2>
                 </center>
             </a >
@@ -110,7 +108,7 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-success">
                 <center>
                     <h2>
-                        Disease 1
+                    Beet pseudoyellows virus (BPYV)
                     </h2>
                 </center>
             </a>
@@ -119,7 +117,7 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-danger">
                 <center>
                     <h2>
-                        Disease 1
+                    Tomato torrado virus (ToTV)
                     </h2>
                 </center>
             </a>
@@ -128,7 +126,7 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-warning">
                 <center>
                     <h2>
-                        Disease 1
+                    Pythium species
                     </h2>
                 </center>
             </a>
@@ -137,7 +135,7 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-info">
                 <center>
                     <h2>
-                        Disease 1
+                    Damping-off
                     </h2>
                 </center>
             </a>
@@ -146,7 +144,7 @@ export default class Dis extends Component {
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2  list-group-item-dark">
                 <center>
                     <h2>
-                        Disease 1
+                    Rusts
                     </h2>
                 </center>
             </a>
@@ -155,23 +153,7 @@ export default class Dis extends Component {
 
             </div>
 
-
-        <p id="para1">
-            fdsyudfvj;askvbgfjvbvdjddddddddddddddddddddddddddddddddddddddddddd
-            bdvdkvkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
-
-            sdvbojjjjjjjjjjjjjjjjjjjjjjj
-            vdjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-            vjdddddddddddddddddddddddddddddddddddddddddd
-
-        </p>
-
         </div>
-
-
-
-
-      </div>
             
 
       </div>

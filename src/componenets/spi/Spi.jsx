@@ -29,10 +29,9 @@ export default class
                 <div class="card h-100">
                 <img src={Cin} class="card-img-top" alt="Skyscrapers"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Cinnomon</h5>
                     <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
+                    
                     </p>
                 </div>
                 <div class="card-footer">
@@ -44,8 +43,8 @@ export default class
                 <div class="card h-100">
                 <img src={Clove}  class="card-img-top" alt="Los Angeles Skyscrapers"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Clove</h5>
+                    <p class="card-text"></p>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted"></small>
@@ -56,11 +55,9 @@ export default class
                 <div class="card h-100">
                 <img src={Pep}  class="card-img-top" alt="Palm Springs Road"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Pepper</h5>
                     <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This card has even longer content than the first to show
-                    that equal height action.
+                    
                     </p>
                 </div>
                 <div class="card-footer">
@@ -75,10 +72,9 @@ export default class
                 <div class="card h-100">
                 <img src={Gin} class="card-img-top" alt="Skyscrapers"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Ginger</h5>
                     <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
+                    
                     </p>
                 </div>
                 <div class="card-footer">
@@ -90,8 +86,8 @@ export default class
                 <div class="card h-100">
                 <img src={Car} class="card-img-top" alt="Los Angeles Skyscrapers"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Cardomom</h5>
+                    <p class="card-text"></p>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted"></small>
@@ -102,11 +98,9 @@ export default class
                 <div class="card h-100">
                 <img src={Tur} class="card-img-top" alt="Palm Springs Road"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Turmeric</h5>
                     <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This card has even longer content than the first to show
-                    that equal height action.
+                    
                     </p>
                 </div>
                 <div class="card-footer">
@@ -121,10 +115,9 @@ export default class
                 <div class="card h-100">
                 <img src={Sed} class="card-img-top" alt="Skyscrapers"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Cumin</h5>
                     <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
+                    
                     </p>
                 </div>
                 <div class="card-footer">
@@ -136,8 +129,10 @@ export default class
                 <div class="card h-100">
                 <img src={Cor} class="card-img-top" alt="Los Angeles Skyscrapers"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Coriander</h5>
+                    <p class="card-text">
+
+                    </p>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted"></small>
@@ -148,11 +143,9 @@ export default class
                 <div class="card h-100">
                 <img src={Bay} class="card-img-top" alt="Palm Springs Road"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Bay Leaves</h5>
                     <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This card has even longer content than the first to show
-                    that equal height action.
+                    
                     </p>
                 </div>
                 <div class="card-footer">
@@ -167,10 +160,9 @@ export default class
                 <div class="card h-100">
                 <img src={Snut} class="card-img-top" alt="Skyscrapers"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Star Nut</h5>
                     <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
+                    
                     </p>
                 </div>
                 <div class="card-footer">
@@ -182,8 +174,10 @@ export default class
                 <div class="card h-100">
                 <img src={Ter} class="card-img-top" alt="Los Angeles Skyscrapers"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Termerind</h5>
+                    <p class="card-text">
+
+                    </p>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted"></small>
@@ -194,11 +188,9 @@ export default class
                 <div class="card h-100">
                 <img src={Ses} class="card-img-top" alt="Palm Springs Road"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Sesami Seeds</h5>
                     <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This card has even longer content than the first to show
-                    that equal height action.
+                    
                     </p>
                 </div>
                 <div class="card-footer">
