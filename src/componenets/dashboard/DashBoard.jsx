@@ -46,7 +46,7 @@ export default class dashboard extends Component {
                           <div class="card-body">
                             <h5 class="card-title">Crop Diseases</h5>
                             <img src={Cd} class="d-block w-100"/>
-                            <a href="../categories/Categories.jsx" class="btn btn-primary">See More</a>
+                            <a href="../cropdis/CropDis.jsx" class="btn btn-primary">See More</a>
                           </div>
                         </div>
                       
