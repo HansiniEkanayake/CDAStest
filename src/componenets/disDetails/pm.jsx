@@ -23,17 +23,17 @@ powdery mildew, plant disease of worldwide occurrence that causes a powdery grow
 Symptoms : Small, white, powdery patches on most above-ground surfaces; usually observed first on undersides of leaves but eventually cover both surfaces; affected leaves become yellow, then brown and papery and die.
 
 </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        
 
-<p class="">
 
-Host Plants : Wide host range and very common, especially in greenhouse crops: cucumber; melons; pumpkin; zucchini;parsnip; beetroot; potato; herbs; peas; bitter melon;tomato; capsicum; Brussels sprouts; cabbage; swedes.
 
-</p>
-
-<p class="">
-
-Prevent Methods: Maintain adequate spacing between plants and keep them far enough away from walls and fences to ensure good air circulation and help reduce relative humidity. Locate plants in proper sunlight according to their needs. Maintain healthy plants by removing dead or diseased foliage.
-</p>
       </div>
       </div>
     )
