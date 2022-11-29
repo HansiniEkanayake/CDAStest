@@ -34,7 +34,9 @@ export default class dashboard extends Component {
                           <div class="card-body">
                             <h5 class="card-title">Set Alert</h5>
                             <img src={Alt} class="d-block w-100"/>
-                            <a href="./alertform/Alertform.jsx" class="btn btn-primary">Go</a>
+                            <a href="./alertform/Alertform.jsx" class="btn btn-primary">New Disease Alert</a>
+                            <a href="./otherAlert/OtherAlert.jsx" class="btn btn-primary">Other Alert</a>
+
                           </div>
                         </div>
                       
