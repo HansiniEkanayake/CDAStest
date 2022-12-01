@@ -40,6 +40,8 @@ export default class Alertform extends Component {
          
           <button type="button" class="btn btn-outline-danger" data-mdb-ripple-color="dark"><h2>Predict Other Crops</h2></button>
 
+          <a href="./newCrop/NewCrop.jsx" class="btn btn-outline-danger">Add New Crop</a>
+          
           </div>
 
        

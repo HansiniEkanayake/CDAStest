@@ -27,7 +27,7 @@ import Dis from './componenets/dis/Dis';
 import Pest from './componenets/pest/Pest';
 import Pm from './componenets/disDetails/pm';
 
-import NewCrop from './componenets/addNewCrop/NewCrop';
+import NewCrop from './componenets/newCrop/NewCrop';
 import OtherAlert from './componenets/otherAlert/OtherAlert';
 
 function App() {

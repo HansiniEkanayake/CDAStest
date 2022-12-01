@@ -165,10 +165,12 @@ export default class Fruit extends Component {
                     <div class="card h-100">
                     <img src={Rosapl} class="card-img-top" alt="Skyscrapers"/>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Rose Apple</h5>
                         <p class="card-text">
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
+                        The rose apple is an egg-shaped tropical fruit that's pale yellow with a touch of pink when ripe. 
+                        The rose apple has different varieties with different colors, 
+                        like dark red, purple, and white. Rose apples have a variety of health benefits, 
+                        like improving heart health, promoting immunity, controlling diabetes, and improving digestion.
                         </p>
                     </div>
                     <div class="card-footer">
@@ -180,8 +182,13 @@ export default class Fruit extends Component {
                     <div class="card h-100">
                     <img src={Olvl} class="card-img-top" alt="Los Angeles Skyscrapers"/>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <h5 class="card-title">Sri Lankan Olive(Veralu) </h5>
+                        <p class="card-text">
+                            Ceylon olive (Elaeocarpus serratus) is a fruit tree that belongs to family Elaeocarpaceae, 
+                            distributed in tropical regions of Indian sub-continent and is indigenous to Sri Lanka. This fruit is rich in minerals, 
+                            vitamins, fibre and valuable antioxidants. Due to its nutritional content it possesses anti-inflam matory, antibiotic, anti-anxiety, analgesic, 
+                            antidepressant and antihypertensive properties. It is used in rheumatism and as an antidote for poison.
+                        </p>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted"></small>
@@ -192,11 +199,10 @@ export default class Fruit extends Component {
                     <div class="card h-100">
                     <img src={Dur} class="card-img-top" alt="Palm Springs Road"/>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Duriyan</h5>
                         <p class="card-text">
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show
-                        that equal height action.
+                        Durian is a unique tropical fruit. It’s popular in Southeast Asia, where it’s nicknamed “the king of fruits.” Durian is very high in nutrients, containing more than most other fruits. The fruit’s flesh can range in color. It’s most commonly yellow or white, but can also be red or green. 
+                        Durian is used in sweet and savory dishes. Both the creamy flesh and seeds are edible, though the seeds need to be cooked.
                         </p>
                     </div>
                     <div class="card-footer">
