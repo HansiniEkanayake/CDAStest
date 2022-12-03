@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logo from '../../assests/img/Logo.png';
 
 export default class CustomNavBar extends Component {
   render() {
@@ -21,33 +22,47 @@ export default class CustomNavBar extends Component {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <a class="navbar-brand mt-2 mt-lg-0" href="#">
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+                  style={{height:"50px", width:"60px"}}
+                  src={logo}
                   height="15"
                   alt="MDB Logo"
                   loading="lazy"
                 />
               </a>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                <li class="nav-item" style={{marginRight:"20px", fontSize:"15px"}}>
                   <a class="nav-link" href="#">
+                   
+                    <b>
                     Dashboard
+                    </b>
+                   
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" style={{marginRight:"20px", fontSize:"15px"}}>
                   <a class="nav-link" href="#">
-                    Team
+                  <b>
+                  Crops
+                  </b>
+                    
+                    
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" style={{marginRight:"20px", fontSize:"15px"}}>
                   <a class="nav-link" href="#">
-                    Projects
+                  
+                  <b>
+                  Diseases
+                  </b>
+                    
+                    
                   </a>
                 </li>
               </ul>
             </div>
             <div class="d-flex align-items-center">
               <a class="text-reset me-3" href="#">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart"   style={{marginRight:"40px"}}></i>
               </a>
 
               <div class="dropdown">
@@ -95,6 +110,8 @@ export default class CustomNavBar extends Component {
                   aria-expanded="false"
                 >
                   <img
+
+                    style={{marginLeft:"30px"}} 
                     src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
                     class="rounded-circle"
                     height="25"

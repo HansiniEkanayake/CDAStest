@@ -194,7 +194,7 @@ function Alertform() {
               </div>
               <Row justify={"center"} style={{ marginTop: "20px" }}>
                 <Col offset={5} span={12}>
-                  <Title style={{ width: "100%", justifyContent: "center" }}>
+                  <Title style={{ width: "100%", justifyContent: "center"}}>
                     Add Your New Alert Here..
                   </Title>
                 </Col>
@@ -297,7 +297,7 @@ function Alertform() {
             textAlign: "center",
           }}
         >
-          Ant Design ©2018 Created by Ant UED
+          FarmCare ©2022 Created by Admin
         </Footer>
       </Layout>
     </div>
