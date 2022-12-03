@@ -1,126 +1,111 @@
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import HomePage, {
-  Navbar, 
-  Header, 
-  Features, 
-  Download, 
-  Subscribe, 
-  Faq, 
-  Footer} from './componenets/homepage';
-import Register from './componenets/register/Register';
-import Login from './componenets/login/Login';
-import Dashboard from './componenets/dashboard/DashBoard';
-import Categories from './componenets/categories/Categories';
-import Vegetables from './componenets/vegetables/Vegetables';
-import Fruit from './componenets/Fruit/Fruit';
-import Spi from './componenets/spi/Spi';
-import Alertform from './componenets/alertform/Alertform';
-import CropDis from './componenets/cropdis/CropDis';
-import Dis from './componenets/dis/Dis';
-import Pest from './componenets/pest/Pest';
-import Pm from './componenets/disDetails/pm';
-
-import NewCrop from './componenets/newCrop/NewCrop';
-import OtherAlert from './componenets/otherAlert/OtherAlert';
+  Navbar,
+  Header,
+  Features,
+  Download,
+  Subscribe,
+  Faq,
+  Footer,
+} from "./componenets/homepage";
+import Register from "./componenets/register/Register";
+import Login from "./componenets/login/Login";
+import Dashboard from "./componenets/dashboard/DashBoard";
+import Categories from "./componenets/categories/Categories";
+import Vegetables from "./componenets/vegetables/Vegetables";
+import Fruit from "./componenets/Fruit/Fruit";
+import Spi from "./componenets/spi/Spi";
+import Alertform from "./componenets/alertform/Alertform";
+import AddAlert from "./componenets/alertform/AddAlert";
+import CropDis from "./componenets/cropdis/CropDis";
+import Dis from "./componenets/dis/Dis";
+import Pest from "./componenets/pest/Pest";
+import Pm from "./componenets/disDetails/pm";
+import NewCrop from "./componenets/addNewCrop/NewCrop";
+import OtherAlert from "./componenets/otherAlert/OtherAlert";
 
 function App() {
   return (
     <Router>
-     
       <div>
         <Switch>
-
           <Route path="/HomePage">
-                <header className="header-bg"> 
-                <Header/>
-                </header>
+            <header className="header-bg">
+              <Header />
+            </header>
 
-                <Features/>   
+            <Features />
 
-                <Faq/>
+            <Faq />
 
-                <Footer/> 
+            <Footer />
           </Route>
-
 
           <Route path="/Register">
-                 <Register />
+            <Register />
           </Route>
-
 
           <Route path="/Login">
-                 <Login />
+            <Login />
           </Route>
- 
 
           <Route path="/Dashboard">
-                 <Dashboard/>
+            <Dashboard />
           </Route>
 
           <Route path="/Categories">
-                 <Categories/>
+            <Categories />
           </Route>
 
           <Route path="/Vegetables">
-                 <Vegetables/>
+            <Vegetables />
           </Route>
 
           <Route path="/Fruit">
-                 <Fruit/>
+            <Fruit />
           </Route>
 
           <Route path="/Spi">
-                 <Spi/>
+            <Spi />
           </Route>
 
           <Route path="/Alertform">
-                 <Alertform/>
+            <Alertform />
+          </Route>
+
+          <Route path="/AddAlert">
+            <AddAlert />
           </Route>
 
           <Route path="/CropDis">
-                 <CropDis/>
+            <CropDis />
           </Route>
 
           <Route path="/Dis">
-                 <Dis/>
+            <Dis />
           </Route>
 
           <Route path="/Pest">
-                 <Pest/>
+            <Pest />
           </Route>
 
           <Route path="/Pm">
-                 <Pm/>
+            <Pm />
           </Route>
 
-       
-
           <Route path="/NewCrop">
-                 <NewCrop/>
+            <NewCrop />
           </Route>
 
           <Route path="/OtherAlert">
-                 <OtherAlert/>
+            <OtherAlert />
           </Route>
-
-          
-
-
-
-
         </Switch>
       </div>
     </Router>
-  )
+  );
 }
 
-
 export default App;
-
