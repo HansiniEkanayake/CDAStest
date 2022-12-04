@@ -1,0 +1,4 @@
+{
+    "MODEL_BASE_URL":"https://farmcarebackend.herokuapp.com/cropAnalyzer/",
+    "FE_BASE_URL":"http://localhost:3000/"
+}
