@@ -11,7 +11,7 @@ import HomePage, {
   Footer,
 } from "./componenets/homepage";
 import Register from "./componenets/register/Register";
-import Login from "./componenets/login/Login";
+import Login from "./componenets/login/LoginPg";
 import Dashboard from "./componenets/dashboard/DashBoard";
 import Categories from "./componenets/categories/Categories";
 import Vegetables from "./componenets/vegetables/Vegetables";
@@ -23,7 +23,7 @@ import CropDis from "./componenets/cropdis/CropDis";
 import Dis from "./componenets/dis/Dis";
 import Pest from "./componenets/pest/Pest";
 import Pm from "./componenets/disDetails/pm";
-import NewCrop from "./componenets/addNewCrop/NewCrop";
+import AddCrop from "./componenets/newCrop/AddCrop";
 import OtherAlert from "./componenets/otherAlert/OtherAlert";
 
 function App() {
@@ -95,8 +95,8 @@ function App() {
             <Pm />
           </Route>
 
-          <Route path="/NewCrop">
-            <NewCrop />
+          <Route path="/AddCrop">
+            <AddCrop />
           </Route>
 
           <Route path="/OtherAlert">
