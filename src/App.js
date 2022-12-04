@@ -23,7 +23,7 @@ import CropDis from "./componenets/cropdis/CropDis";
 import Dis from "./componenets/dis/Dis";
 import Pest from "./componenets/pest/Pest";
 import Pm from "./componenets/disDetails/pm";
-import NewCrop from "./componenets/addNewCrop/NewCrop";
+//import NewCrop from "./componenets/addNewCrop/NewCrop";
 import OtherAlert from "./componenets/otherAlert/OtherAlert";
 
 function App() {
@@ -95,9 +95,9 @@ function App() {
             <Pm />
           </Route>
 
-          <Route path="/NewCrop">
+          {/* <Route path="/NewCrop">
             <NewCrop />
-          </Route>
+          </Route> */}
 
           <Route path="/OtherAlert">
             <OtherAlert />
