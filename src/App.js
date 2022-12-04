@@ -11,7 +11,7 @@ import HomePage, {
   Footer,
 } from "./componenets/homepage";
 import Register from "./componenets/register/Register";
-import Login from "./componenets/login/LoginPg";
+import LoginPg from "./componenets/login/LoginPg";
 import Dashboard from "./componenets/dashboard/DashBoard";
 import Categories from "./componenets/categories/Categories";
 import Vegetables from "./componenets/vegetables/Vegetables";
@@ -47,8 +47,8 @@ function App() {
             <Register />
           </Route>
 
-          <Route path="/Login">
-            <Login />
+          <Route path="/LoginPg">
+            <LoginPg />
           </Route>
 
           <Route path="/Dashboard">

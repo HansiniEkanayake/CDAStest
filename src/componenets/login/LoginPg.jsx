@@ -2,31 +2,103 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 import Img1 from "../../assests/hmpg/welcome.jpg";
-import { Col, Row, Form, Input, Button} from "antd";
+import { Col, Row, Form, Input, Button, Layout, notification} from "antd";
 import { UserOutlined, LockOutlined, GoogleOutlined, FacebookOutlined, LinkedinOutlined } from '@ant-design/icons';
+import logo from '../../assests/hmpg/logo.png';
+import configs from "../../assests/configs/config.json";
 
-function AddCrop() {
+function LoginPg() {
+
+    const { Header, Content, Footer } = Layout;
+    const [form] = Form.useForm();
+    const MODEL_BASE_URL = configs.MODEL_BASE_URL;
+    const layout = {
+        labelCol: {
+          span: 24,
+        }};
+
+  
+
+        const onFinish = (values) => {
+            console.log("Success:", values);
+            console.log("URL is :", MODEL_BASE_URL + "userLogin");
+            const config = {
+              headers: {
+                "Content-Type": "text/plain",
+              },
+            };
+            axios
+              .post(
+                MODEL_BASE_URL + "addAlert",
+                {
+                  data: {
+                    cropName: values.userName,
+                    password: values.password,
+                  },
+                },
+                config
+              )
+              .then(
+                (response) => {
+                  console.log(response);
+                  
+                  const args = {
+                    message: "Alert Added Successfully",
+                    description: "",
+                    duration: 4,
+                  };
+                  notification.open(args);
+                  window.location.replace("Dashboard");
+                },
+                (error) => {
+                  console.log("Error Pccoured : " + error);
+                }
+              );
+          };
 
   return (
     <div>
 
-        <div>
-        <Row>
-                <Col offset={4} span={16} style={{paddingTop:"100px",paddingBottom:"100px"}}>
-                    <Row>
+        <Layout className="layout" style={{ paddingTop: "10px" }}>
+        <Content
+          style={{
+            padding: "0 50px",
+          }}
+        >
+          
+          <Row>
+          <Col offset={4} span={16} >
+              <div
+                style={{
+                  minHeight: "280px",
+                  padding: "24px",
+                  background: "#fff",
+                  marginTop: "100px"
+                }}
 
-                        <Col span={8}>
+                
+              >
+                
 
-                        <div style={{marginTop:"100px", marginRight:"20px"}}>
-                                <Form.Item
+                <Row>
 
-                                   
+                    <Col span={12}>
+                    <img src={logo} style={{height:"100px", width:"120px", marginLeft:"150px"}}/>
+
+               
+                    <Form
+                    {...layout}
+                    form={form}
+                    name="control-hooks"
+                    onFinish={onFinish}
+                    >
+
+                      <Form.Item
+
+                                    style={{marginRight:"50px", marginLeft:"30px", marginTop:"50px"}}
                                     name="userName"
                                     rules={[
-                                        {
-                                            type: 'email',
-                                            message: 'The input is not valid E-mail!',
-                                        },
+                                        
                                         {
                                             required: true,
                                             message: 'Please enter your user name!',
@@ -37,6 +109,7 @@ function AddCrop() {
                                 </Form.Item>
 
                                 <Form.Item
+                                    style={{marginRight:"50px", marginLeft:"30px", marginTop:"50px"}}
                                     name="password"
                                     rules={[
                                         {
@@ -53,31 +126,45 @@ function AddCrop() {
                 
                                 </Form.Item>
 
-                                <Form.Item style={{marginTop:"100px"}}>
+                                <Form.Item style={{marginTop:"50px", marginRight:"50px", marginLeft:"30px"}}>
+                               
                                     <Button type="primary" htmlType="submit" block className="login-form-button">
-                                        Log in
+                                        Login
+                                    </Button>
+                                    
+                                </Form.Item>
+
+                                <Form.Item style={{marginTop:"50px", marginRight:"50px", marginLeft:"30px"}}>
+                                    <Button type="primary" htmlType="submit" block className="login-form-button">
+                                        Request Account
                                     </Button>
                                 </Form.Item>
-                        </div>
-                        
-                        </Col>
+                    </Form>
 
-                        <Col span={16}>
 
-                            <div>
-                            <img src={Img1} style={{Height:"400px", width:"400px", marginTop:"5oopx"}}/>
-                            </div>
+                    </Col>
 
-                        </Col>
+                    <Col span={12}>
+                    <div>
+                    <img src={Img1} style={{height:"500px", width:"450px"}}/>
+                    </div>
+                    </Col>
 
-                    </Row>
-                </Col>
-        
-        </Row>
-        </div>
+
+                </Row>
+              
+              </div>
+                
+
+            </Col>
+          </Row>
+          </Content>
+          </Layout>
+
+
       
     </div>
   );
 }
 
-export default AddCrop
+export default LoginPg
