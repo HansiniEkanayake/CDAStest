@@ -19,16 +19,16 @@ export default class Dis extends Component {
 
             <div>
 
-            <a href="#para1" target="_blank"
+            <a href="https://plantix.net/en/library/plant-diseases/600022/leaf-miner-flies" target="_blank"
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-primary">
                 <center>
                     <h2>
-                    White blister/White rust (Albugo candida)
+                    Leaf Miner Flies
                     </h2>
                 </center>
             </a>
 
-            <a href="#" target="_blank"
+            <a href="https://plantix.net/en/library/plant-diseases/100264/downy-mildew-of-cucurbits" target="_blank"
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-secondary">
                 <center>
                     <h2>
@@ -37,7 +37,7 @@ export default class Dis extends Component {
                 </center>
             </a >
             
-            <a href={"http://localhost:3000/pm"} target="_blank"
+            <a href={"https://plantix.net/en/library/plant-diseases/100002/powdery-mildew"} target="_blank"
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-success">
                 <center>
                     <h2>
@@ -46,7 +46,7 @@ export default class Dis extends Component {
                 </center>
             </a>
 
-            <a href="#" target="_blank"
+            <a href="https://plantix.net/en/library/plant-diseases/100035/clubroot" target="_blank"
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-danger">
                 <center>
                     <h2>
@@ -55,11 +55,11 @@ export default class Dis extends Component {
                 </center>
             </a>
 
-            <a href="#" target="_blank"
+            <a href="https://plantix.net/en/library/plant-diseases/300050/bacterial-spot-and-speck-of-tomato" target="_blank"
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-warning">
                 <center>
                     <h2>
-                    Black rot
+                    Bacterial Spot and Speck of Tomato
                     </h2>
                 </center>
             </a>

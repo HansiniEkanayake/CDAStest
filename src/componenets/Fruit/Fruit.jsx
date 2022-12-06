@@ -35,7 +35,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-mango-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-mango-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                    
                     </div>
                     </div>
                 </div>
@@ -49,7 +52,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-pineapple-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-pineapple-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                    
                     </div>
                     </div>
                 </div>
@@ -63,7 +69,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-avacado-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-avacado-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                    
                     </div>
                     </div>
                 </div>
@@ -80,7 +89,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-banana-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-banana-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                   
                     </div>
                     </div>
                 </div>
@@ -95,7 +107,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-watermelon-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-watermelon-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                  
                     </div>
                     </div>
                 </div>
@@ -109,7 +124,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-papaw-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-papaw-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                    
                     </div>
                     </div>
                 </div>
@@ -126,7 +144,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-grapes-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-grapes-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                
                     </div>
                     </div>
                 </div>
@@ -140,7 +161,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-rambutan-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-rambutan-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                    
                     </div>
                     </div>
                 </div>
@@ -154,7 +178,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-guava/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-guava/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                   
                     </div>
                     </div>
                 </div>
@@ -174,7 +201,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-rose-apple-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-rose-apple-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                    
                     </div>
                     </div>
                 </div>
@@ -191,7 +221,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-ceylon-olive-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-ceylon-olive-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                    
                     </div>
                     </div>
                 </div>
@@ -206,7 +239,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-duriyan-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-duriyan-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                    
                     </div>
                     </div>
                 </div>
@@ -223,7 +259,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-wood-apple-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-wood-apple-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                   
                     </div>
                     </div>
                 </div>
@@ -237,7 +276,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://agridpt.w3dtec.net/fruit-crops-passion-fruit-s/"} target="_blank"/>
+                    <a href={"http://agridpt.w3dtec.net/fruit-crops-passion-fruit-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                    
                     </div>
                     </div>
                 </div>
@@ -251,7 +293,10 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-star-fruit-s/"} target="_blank"/>
+                    <a href={"https://doa.gov.lk/fruit-crops-star-fruit-s/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                    
                     </div>
                     </div>
                 </div>

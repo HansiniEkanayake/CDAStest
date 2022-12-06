@@ -7,6 +7,7 @@ import Spi from '../../assests/img/spices.jpg';
 
 
 
+
 export default class Categories extends Component {
 
   render() {
@@ -49,7 +50,7 @@ export default class Categories extends Component {
 
                
                 <div class="col">
-                <a href={"../vegetables/Vegetables.jsx"}>
+                <a href={"/Vegetables"}>
                     <div class="card h-100">
                     <div class="card-body">
                         
@@ -69,7 +70,7 @@ export default class Categories extends Component {
 
                 
                 <div class="col">
-                <a href={"../Fruit/Fruit.jsx"}>
+                <a href={"/Fruit"}>
                 <div class="card h-100">
                     <div class="card-body">
                         <h1 class="card-title">Fruits</h1>
@@ -90,7 +91,7 @@ export default class Categories extends Component {
 
                 
                 <div class="col">
-                <a href={"../spi/Spi.jsx"}>
+                <a href={"/Spi"}>
                 <div class="card h-100">
                     <div class="card-body">
                         <h1 class="card-title">Spices</h1>

@@ -21,7 +21,7 @@ extends Component {
 
             <div>
 
-            <a href="http://localhost:3000/sm" target="_blank"
+            <a href="https://plantix.net/en/library/plant-diseases/500004/spider-mites" target="_blank"
             class="list-group-item list-group-item-action px-3 border-0 rounded-3 mb-2 list-group-item-primary">
                 <center>
                     <h2>

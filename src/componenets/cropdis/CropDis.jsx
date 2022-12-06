@@ -18,7 +18,7 @@ export default class CropDis extends Component {
 
                             
                 <div class="col">
-                <a href={"../pest/Pest.jsx"}>
+                <a href={"/Pest"}>
                     <div class="card h-100">
                     <div class="card-body">
                         
@@ -37,7 +37,7 @@ export default class CropDis extends Component {
 
 
                 <div class="col">
-                <a href={"../dis/Dis.jsx"}>
+                <a href={"/Dis"}>
                 <div class="card h-100">
                     <div class="card-body">
                         <h1 class="card-title">Disease Management</h1>

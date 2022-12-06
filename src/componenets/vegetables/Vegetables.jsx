@@ -32,11 +32,12 @@ export default class Vegetables extends Component {
                         <p class="card-text">
                         Carrot is belongs to Apiaceae family.  It can be grown successfully, in all the agro-ecological zone.Carrot can be grown well in cool area of up country regions. It can be cultivated in all the agro-ecological zones.It need a finely prepared well drain soil with more organic matter.
                         </p>
+                        
                       </div>
                       <div class="card-footer">
-                       
-                        <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-carrot/"} target="_blank"/>
-                        
+                      <a href={"https://doa.gov.lk/sinhala-hordi-crop-carrot/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
                       </div>
                     </div>
                   </div>
@@ -48,9 +49,12 @@ export default class Vegetables extends Component {
                         <p class="card-text">
                         Radish belongs to the family Brassicaceae which can be grown in all agro-climatic zones of Sri Lanka. Well drained soil with pH between 6-7.5 is best for cultivation.Radish can be grown in all agro-ecological regions in the country.Well-drained soils are suitable, poorly drained soils can cause growth problems. A pH range of 6.0 – 7.5 is appropriate for cultivation.
                         </p>
+                        
                       </div>
                       <div class="card-footer">
-                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-raddish/"} target="_blank"/>
+                      <a href={"https://doa.gov.lk/sinhala-hordi-crop-raddish/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
                       </div>
                     </div>
                   </div>
@@ -62,9 +66,12 @@ export default class Vegetables extends Component {
                         <p class="card-text">
                         Cabbage is belong to Brassicaceae family. It can be grown all the agro-ecological regions.Cabbage can be cultivated successfully in cool climatic condition in up country area. Heat tolerance varieties can be cultivated in dry zone.Well drain loamy soil with adequate amount of organic matter is good for cabbage. Best pH range is 6-6.5. Club root dieses incidence is higher when low soil pH or acidic soil.
                         </p>
+                        
                       </div>
                       <div class="card-footer">
-                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-cabbage/"} target="_blank"/>
+                      <a href={"https://doa.gov.lk/sinhala-hordi-crop-cabbage/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
                       </div>
                     </div>
                   </div>
@@ -81,7 +88,10 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-brinjal/"} target="_blank"/>
+                      <a href={"https://doa.gov.lk/sinhala-hordi-crop-brinjal/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
+                      
                       </div>
                     </div>
                   </div>
@@ -95,7 +105,9 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-capsicum/"} target="_blank"/>
+                      <a href={"https://doa.gov.lk/sinhala-hordi-crop-capsicum/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
                       </div>
                     </div>
                   </div>
@@ -109,7 +121,9 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-tomato/"} target="_blank"/>
+                      <a href={"https://doa.gov.lk/sinhala-hordi-crop-tomato/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
                       </div>
                     </div>
                   </div>
@@ -128,7 +142,9 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-luffa/"} target="_blank"/>
+                      <a href={"https://doa.gov.lk/sinhala-hordi-crop-luffa/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
                       </div>
                     </div>
                   </div>
@@ -141,7 +157,9 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-snake-gourd/"} target="_blank"/>
+                      <a href={"https://doa.gov.lk/sinhala-hordi-crop-snake-gourd/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
                       </div>
                     </div>
                   </div>
@@ -155,7 +173,9 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted"></small>
+                      <a href={"https://doa.gov.lk/sinhala-hordi-crop-bitter-gourd/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
                       </div>
                     </div>
                   </div>
@@ -172,7 +192,9 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-bitter-gourd/"} target="_blank"/>
+                      <a href={"https://doa.gov.lk/sinhala-hordi-crop-potato/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
                       </div>
                     </div>
                   </div>
@@ -186,7 +208,9 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-sweet-potato/"} target="_blank"/>
+                      <a href={"https://doa.gov.lk/sinhala-hordi-crop-sweet-potato/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
                       </div>
                     </div>
                   </div>
@@ -200,7 +224,9 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-pumpkin/"} target="_blank"/>
+                      <a href={"https://doa.gov.lk/sinhala-hordi-crop-pumpkin/"} target="_blank"> 
+                      <p style={{color: "Green"}}> See More...</p>
+                      </a>
                       </div>
                     </div>
                   </div>
