@@ -19,7 +19,7 @@ const Header = () => {
             The farmers can ready to them and protect their yeild by new crop diseases.
             </p>
             <div className="header-cta">  
-            <Button text = {"Sign Up"} btnClass ={"btn-dark"} href={"../login/Login.jsx"}/>
+            <Button text = {"Sign Up"} btnClass ={"btn-dark"} href={"LoginPg"}/>
             
           </div>
           </div>
@@ -31,7 +31,7 @@ const Header = () => {
         </div>
         <div className='floating-icon'>
           <a href='#features'>
-            <BsMouse color='green' size={25} className ="mouse"/>
+            <BsMouse style={{color:"Green"}} size={25} className ="mouse"/>
 
           </a>
         </div>

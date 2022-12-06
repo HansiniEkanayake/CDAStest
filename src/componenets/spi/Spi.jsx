@@ -37,7 +37,7 @@ export default class
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"></small>
+                <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://dea.gov.lk/%e0%b6%9a%e0%b7%94%e0%b6%bb%e0%b7%94%e0%b6%b3%e0%b7%94/"} target="_blank"/>
                 </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@ export default class
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"></small>
+                <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://dea.gov.lk/%e0%b6%9a%e0%b6%bb%e0%b7%8f%e0%b6%b6%e0%b7%94/"} target="_blank"/>
                 </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ export default class
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"></small>
+                <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://dea.gov.lk/%e0%b6%9c%e0%b6%b8%e0%b7%8a%e0%b6%b8%e0%b7%92%e0%b6%bb%e0%b7%92%e0%b7%83%e0%b7%8a/"} target="_blank"/>
                 </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@ export default class
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"></small>
+                <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://dea.gov.lk/%e0%b6%89%e0%b6%9f%e0%b7%94%e0%b6%bb%e0%b7%94/"} target="_blank"/>
                 </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@ export default class
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"></small>
+                <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://dea.gov.lk/%e0%b6%9a%e0%b6%bb%e0%b6%af%e0%b6%b8%e0%b7%94%e0%b6%82%e0%b6%9c%e0%b7%94/"} target="_blank"/>
                 </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@ export default class
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"></small>
+                <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://dea.gov.lk/%e0%b6%9a%e0%b7%84/"} target="_blank"/>
                 </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@ export default class
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"></small>
+                <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://dea.gov.lk/%e0%b6%9a%e0%b7%84/"} target="_blank"/>
                 </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@ export default class
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"></small>
+                <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://dea.gov.lk/%e0%b6%9a%e0%b7%84/"} target="_blank"/>
                 </div>
                 </div>
             </div>
@@ -171,7 +171,7 @@ export default class
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"></small>
+                <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://dea.gov.lk/%e0%b6%9a%e0%b7%84/"} target="_blank"/>
                 </div>
                 </div>
             </div>
@@ -190,7 +190,7 @@ export default class
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"></small>
+                <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://dea.gov.lk/%e0%b6%9a%e0%b7%84/"} target="_blank"/>
                 </div>
                 </div>
             </div>
@@ -206,7 +206,7 @@ export default class
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"></small>
+                <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://dea.gov.lk/%e0%b6%9a%e0%b7%84/"} target="_blank"/>
                 </div>
                 </div>
             </div>
@@ -222,7 +222,7 @@ export default class
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"></small>
+                <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://dea.gov.lk/%e0%b6%9a%e0%b7%84/"} target="_blank"/>
                 </div>
                 </div>
             </div>

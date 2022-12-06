@@ -35,7 +35,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-mango-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-pineapple-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-avacado-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-banana-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-watermelon-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-papaw-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -126,7 +126,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-grapes-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-rambutan-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-guava/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -174,7 +174,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-rose-apple-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -191,7 +191,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-ceylon-olive-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-duriyan-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -223,7 +223,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-wood-apple-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -231,13 +231,13 @@ export default class Fruit extends Component {
                     <div class="card h-100">
                     <img src={Passion} class="card-img-top" alt="Los Angeles Skyscrapers"/>
                     <div class="card-body">
-                        <h5 class="card-title">[assion Fruit]</h5>
+                        <h5 class="card-title">[Passion Fruit]</h5>
                         <p class="card-text">
                         Passiflora edulis, commonly known as passion fruit, is a vine species of passion flower native to southern Brazil through Paraguay and northern Argentina. It is cultivated commercially in tropical and subtropical areas for its sweet, seedy fruit.
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"http://agridpt.w3dtec.net/fruit-crops-passion-fruit-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>
@@ -251,7 +251,7 @@ export default class Fruit extends Component {
                         </p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"></small>
+                    <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/fruit-crops-star-fruit-s/"} target="_blank"/>
                     </div>
                     </div>
                 </div>

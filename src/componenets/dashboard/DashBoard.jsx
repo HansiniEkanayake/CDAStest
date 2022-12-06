@@ -286,7 +286,7 @@ function Dashboard(navigation) {
           textAlign: "center",
         }}
       >
-        Ant Design ©2018 Created by Ant UED
+        FarmCare ©2022 Created by Admin
       </Footer>
     </div>
   );

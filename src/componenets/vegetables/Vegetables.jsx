@@ -34,7 +34,9 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted"></small>
+                       
+                        <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-carrot/"} target="_blank"/>
+                        
                       </div>
                     </div>
                   </div>
@@ -48,7 +50,7 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted"></small>
+                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-raddish/"} target="_blank"/>
                       </div>
                     </div>
                   </div>
@@ -62,7 +64,7 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted"></small>
+                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-cabbage/"} target="_blank"/>
                       </div>
                     </div>
                   </div>
@@ -79,7 +81,7 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted"></small>
+                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-brinjal/"} target="_blank"/>
                       </div>
                     </div>
                   </div>
@@ -93,7 +95,7 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted"></small>
+                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-capsicum/"} target="_blank"/>
                       </div>
                     </div>
                   </div>
@@ -107,7 +109,7 @@ export default class Vegetables extends Component {
                         </p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted"></small>
+                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-tomato/"} target="_blank"/>
                       </div>
                     </div>
                   </div>
@@ -122,11 +124,11 @@ export default class Vegetables extends Component {
                         <p class="card-text">
                         Ridge gourd/ sponge gourd (Wetakolu) is a very popular crop belonging to family Cucurbitaceae
 
-It can be cultivated in all over the low country, mid, country wet zone and Intermediate Zones, as an economical crops.
+                      It can be cultivated in all over the low country, mid, country wet zone and Intermediate Zones, as an economical crops.
                         </p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted"></small>
+                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-luffa/"} target="_blank"/>
                       </div>
                     </div>
                   </div>
@@ -139,7 +141,7 @@ It can be cultivated in all over the low country, mid, country wet zone and Inte
                         </p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted"></small>
+                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-snake-gourd/"} target="_blank"/>
                       </div>
                     </div>
                   </div>
@@ -170,7 +172,7 @@ It can be cultivated in all over the low country, mid, country wet zone and Inte
                         </p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted"></small>
+                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-bitter-gourd/"} target="_blank"/>
                       </div>
                     </div>
                   </div>
@@ -184,7 +186,7 @@ It can be cultivated in all over the low country, mid, country wet zone and Inte
                         </p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted"></small>
+                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-sweet-potato/"} target="_blank"/>
                       </div>
                     </div>
                   </div>
@@ -198,7 +200,7 @@ It can be cultivated in all over the low country, mid, country wet zone and Inte
                         </p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted"></small>
+                      <Button text = {"See More"} btnClass ={"btn-dark"} href={"https://doa.gov.lk/sinhala-hordi-crop-pumpkin/"} target="_blank"/>
                       </div>
                     </div>
                   </div>
