@@ -119,7 +119,7 @@ function Dashboard(navigation) {
             <Card
               hoverable
               size="small"
-              title={<Title level={3}>Desease in {i.AffectedCrop}</Title>}
+              title={<Title level={3}>Disease in {i.AffectedCrop}</Title>}
               extra={<Tag color="#FF0000">Red Alert</Tag>}
               style={{ width: 900 }}
             >
@@ -178,10 +178,7 @@ function Dashboard(navigation) {
             <Card hoverable size="small" style={{ width: 900 }}>
               <Row style={{ padding: 0 }}>
                 <Col span={2} style={{ padding: 0 }}>
-                  <Image
-                    width={80}
-                    src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-                  />
+                  <Image width={80} src={i.ImageList[0]} />
                 </Col>
                 <Col offset={1} span={18}>
                   <Title level={4}>{i.alertTitle}</Title>
@@ -260,7 +257,7 @@ function Dashboard(navigation) {
                   background: "#fff",
                 }}
               >
-                <Title>Desease Alerts</Title>
+                <Title>Disease Alerts</Title>
                 {createElements()}
               </div>
               <div
