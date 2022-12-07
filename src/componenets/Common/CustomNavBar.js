@@ -61,9 +61,7 @@ export default class CustomNavBar extends Component {
               </ul>
             </div>
             <div class="d-flex align-items-center">
-              <a class="text-reset me-3" href="#">
-                <i class="fas fa-shopping-cart"   style={{marginRight:"40px"}}></i>
-              </a>
+              
 
               <div class="dropdown">
                 <a

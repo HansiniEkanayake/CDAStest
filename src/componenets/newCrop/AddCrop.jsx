@@ -406,12 +406,12 @@ function AddCrop() {
                     <Form.Item {...tailLayout}>
                       <Row style={{ marginTop: "30px" }}>
                         <Col span={4}>
-                          <Button type="primary" htmlType="submit">
+                          <Button type="primary" htmlType="submit" style={{ backgroundColor:"#825C14"}}>
                             Submit
                           </Button>
                         </Col>
                         <Col span={4}>
-                          <Button htmlType="button" onClick={onReset}>
+                          <Button htmlType="button" onClick={onReset} style={{ backgroundColor:"#825C14", color:"white"}}>
                             Reset
                           </Button>
                         </Col>
@@ -429,7 +429,7 @@ function AddCrop() {
             textAlign: "center",
           }}
         >
-          FarmCare ©2022 Created by Admin
+          FarmCare ©2022 Created by Ekanayaka
         </Footer>
       </Layout>
     </div>
