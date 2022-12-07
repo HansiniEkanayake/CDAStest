@@ -363,7 +363,7 @@ function Alertform() {
             textAlign: "center",
           }}
         >
-          Ant Design ©2018 Created by Ant UED
+          FarmCare ©2022 Created by Ekanayaka
         </Footer>
       </Layout>
     </div>

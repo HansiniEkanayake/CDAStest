@@ -286,7 +286,7 @@ function Dashboard(navigation) {
           textAlign: "center",
         }}
       >
-        FarmCare ©2022 Created by Admin
+        FarmCare ©2022 Created by Ekanayaka
       </Footer>
     </div>
   );
