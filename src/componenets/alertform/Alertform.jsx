@@ -287,10 +287,12 @@ function Alertform() {
                       </Select>
                     </Form.Item>
 
-                    <Button href="/AddCrop" type="block" style={{ width: "1142px", backgroundColor:"#088F8F"}}>
-                      
-                        Add New Crop
-                     
+                    <Button
+                      href="/AddCrop"
+                      type="block"
+                      style={{ width: "1142px", backgroundColor: "#088F8F" }}
+                    >
+                      Add New Crop
                     </Button>
 
                     <Form.Item
@@ -340,12 +342,25 @@ function Alertform() {
                     <Form.Item {...tailLayout}>
                       <Row style={{ marginTop: "30px" }}>
                         <Col span={4}>
-                          <Button type="primary" htmlType="submit" style={{ backgroundColor:"#088F8F"}}>
+                          <Button
+                            block
+                            type="primary"
+                            htmlType="submit"
+                            style={{ backgroundColor: "#088F8F" }}
+                          >
                             Submit
                           </Button>
                         </Col>
-                        <Col span={4}>
-                          <Button htmlType="button" onClick={onReset} style={{ backgroundColor:"#088F8F", color:"white"}}>
+                        <Col offset={1} span={4}>
+                          <Button
+                            block
+                            htmlType="button"
+                            onClick={onReset}
+                            style={{
+                              backgroundColor: "#088F8F",
+                              color: "white",
+                            }}
+                          >
                             Reset
                           </Button>
                         </Col>
