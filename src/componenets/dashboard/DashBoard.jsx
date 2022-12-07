@@ -11,7 +11,7 @@ import {
   Avatar,
   List,
   Select,
-  Upload,
+  Image,
   message,
   Modal,
   notification,
@@ -38,6 +38,7 @@ function Dashboard(navigation) {
   const MODEL_BASE_URL = configs.MODEL_BASE_URL;
 
   const [alertsList, setAlertsList] = useState([]);
+  const [otherAlertsList, setOtherAlertsList] = useState([]);
   const [similarCropsList, setSimilarCropsList] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -80,6 +81,14 @@ function Dashboard(navigation) {
         console.log("Inside --> getAlerts : response : " + response);
         console.log(response);
         setAlertsList(response.data);
+        console.log("Desasese alerts done.");
+        axios
+          .get(configs.MODEL_BASE_URL + "getOtherAlertsList", config)
+          .then((res) => {
+            console.log("Inside --> getOtherAlertsList : res : " + res);
+            console.log(res);
+            setOtherAlertsList(res.data);
+          });
       });
   };
 
@@ -160,6 +169,38 @@ function Dashboard(navigation) {
     }
     return elments;
   };
+  let createOtherAlerts = () => {
+    const elments = [];
+    if (otherAlertsList.length > 0) {
+      otherAlertsList.forEach((i) => {
+        elments.push(
+          <div style={{ marginBottom: "3%" }}>
+            <Card hoverable size="small" style={{ width: 900 }}>
+              <Row style={{ padding: 0 }}>
+                <Col span={2} style={{ padding: 0 }}>
+                  <Image
+                    width={80}
+                    src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+                  />
+                </Col>
+                <Col offset={1} span={18}>
+                  <Title level={4}>{i.alertTitle}</Title>
+                  <Text strong>T{i.alertDescription}</Text>
+                </Col>
+              </Row>
+            </Card>
+          </div>
+        );
+      });
+    } else {
+      elments.push(
+        <Card size="small" style={{ width: 900 }}>
+          <Title level={2}>Loading Alerts...</Title>
+        </Card>
+      );
+    }
+    return elments;
+  };
 
   return (
     <div>
@@ -221,6 +262,31 @@ function Dashboard(navigation) {
               >
                 <Title>Desease Alerts</Title>
                 {createElements()}
+              </div>
+              <div
+                style={{
+                  marginTop: "40px",
+                  minHeight: "280px",
+                  padding: "24px",
+                  background: "#fff",
+                }}
+              >
+                <Title>Other Alerts</Title>
+                {createOtherAlerts()}
+                {/* <Card hoverable size="small" style={{ width: 900 }}>
+                  <Row style={{ padding: 0 }}>
+                    <Col span={2} style={{ padding: 0 }}>
+                      <Image
+                        width={80}
+                        src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+                      />
+                    </Col>
+                    <Col offset={1} span={18}>
+                      <Title level={4}>Alert Title</Title>
+                      <Text strong>This is alert description</Text>
+                    </Col>
+                  </Row>
+                </Card> */}
               </div>
             </Col>
             <Col offset={1} span={7}>

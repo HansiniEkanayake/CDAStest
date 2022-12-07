@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 import {
   Breadcrumb,
@@ -14,6 +15,8 @@ import {
   message,
   Modal,
   notification,
+  Spin,
+  Space,
 } from "antd";
 import Ban from "../../assests/img/ac.jpg";
 import CustomNavBar from "../Common/CustomNavBar";
@@ -24,12 +27,19 @@ import {
   FileOutlined,
 } from "@ant-design/icons";
 function AddCrop() {
+  const history = useHistory();
   const { Header, Content, Footer } = Layout;
   const { Title } = Typography;
   const { TextArea } = Input;
   const { Option } = Select;
   const [form] = Form.useForm();
   const MODEL_BASE_URL = configs.MODEL_BASE_URL;
+
+  const [familyName, setFamilyName] = useState("");
+  const [tempRange, setTempRange] = useState("");
+  const [cropZone, setCropZone] = useState("");
+  const [phRange, setPhRange] = useState("");
+  const [cropSeason, setCropSeason] = useState("");
 
   const layout = {
     labelCol: {
@@ -46,17 +56,41 @@ function AddCrop() {
     },
   };
 
-  const handleFamilyChange = (e) => {
-    let index = e.nativeEvent.target.selectedIndex;
-    let label = e.nativeEvent.target[index].text;
-    let value = e.target.value;
-    console.log("handleFamilyChange:", label);
+  const addAlertPage = () => {
+    history.push("/Alertform");
+  };
+
+  const handleFamilyChange = (value, option) => {
+    console.log(value);
+    console.log(option.children);
+    setFamilyName(option.children);
+  };
+  const handleSeasonChange = (value, option) => {
+    console.log(value);
+    console.log(option.children);
+    setCropSeason(option.children);
+  };
+  const handleZoneChange = (value, option) => {
+    console.log(value);
+    console.log(option.children);
+    setCropZone(option.children);
+  };
+  const handlePhChange = (value, option) => {
+    console.log(value);
+    console.log(option.children);
+    setPhRange(option.children);
+  };
+  const handleTempChange = (value, option) => {
+    console.log(value);
+    console.log(option.children);
+    setTempRange(option.children);
   };
 
   const onFinish = (values) => {
     console.log("Success:", values);
     console.log("values.season :", values.season);
     console.log("URL is :", MODEL_BASE_URL + "addNewCrop");
+    showLoadingSpinner();
     const config = {
       headers: {
         "Content-Type": "text/plain",
@@ -64,7 +98,7 @@ function AddCrop() {
     };
     axios
       .post(
-        MODEL_BASE_URL + "addAlert",
+        MODEL_BASE_URL + "addnewCrop",
         {
           data: {
             family: values.familyName,
@@ -72,10 +106,13 @@ function AddCrop() {
             season: values.season,
             temperature: values.tempVal,
             zone: values.zone,
-            familyText: values.familyName,
-            temperatureText: values.tempVal,
-            zoneText: values.zone,
-            seasonText: values.season,
+
+            familyText: familyName,
+            temperatureText: tempRange,
+            zoneText: cropZone,
+            phText: phRange,
+            seasonText: cropSeason,
+
             cropName: values.cropName,
           },
         },
@@ -84,32 +121,29 @@ function AddCrop() {
       .then(
         (response) => {
           console.log(response);
-          // notification["success"].open({
-          //   message: "Alert Added Successfully",
-          //   description: "",
-          // });
-          // api["success"]({
-          //   message: "Alert Added Successfully",
-          //   description: "",
-          // });
           const args = {
-            message: "Alert Added Successfully",
+            message: "Crop Added Successfully",
             description: "",
             duration: 4,
           };
           notification.open(args);
-          window.location.replace("Alertform");
+          addAlertPage();
         },
         (error) => {
-          console.log("Error Pccoured : " + error);
+          console.log("Error Occoured : " + error);
         }
       );
   };
   const onReset = () => {
     form.resetFields();
   };
-  const onGenderChange = () => {
-    console.log("JI");
+
+  let showLoadingSpinner = () => {
+    return (
+      <Spin tip="Loading" size="large" wrapperClassName="mainContent">
+        <div className="content1" />
+      </Spin>
+    );
   };
 
   const uploadProps = {
@@ -131,7 +165,7 @@ function AddCrop() {
   };
 
   return (
-    <div>
+    <div className="mainContent">
       <CustomNavBar />
       <Layout className="layout" style={{ paddingTop: "10px" }}>
         <Content
@@ -157,7 +191,7 @@ function AddCrop() {
           >
             <div>
               <div>
-                <img src={Ban} class="card-img-top" />
+                <img src={Ban} className="card-img-top" />
               </div>
               <Row justify={"center"} style={{ marginTop: "20px" }}>
                 <Col offset={5} span={12}>
@@ -175,8 +209,16 @@ function AddCrop() {
                     onFinish={onFinish}
                   >
                     <div className="row">
-                      <Form.Item name="cropName" label="New Crop Name">
-                        <Input.TextArea />
+                      <Form.Item
+                        name="cropName"
+                        label="New Crop Name"
+                        rules={[
+                          {
+                            required: true,
+                          },
+                        ]}
+                      >
+                        <Input />
                       </Form.Item>
 
                       <div className="col">
@@ -194,6 +236,8 @@ function AddCrop() {
                             placeholder="Select a family name from the dropdown list"
                             onChange={handleFamilyChange}
                             allowClear
+                            listItemHeight={10}
+                            listHeight={250}
                           >
                             <Option value={0}>Agaricaceae</Option>
                             <Option value={1}>Alliaceae</Option>
@@ -253,7 +297,7 @@ function AddCrop() {
                           <Select
                             showSearch
                             placeholder="Select a Temperature Range from the dropdown list"
-                            onChange={onGenderChange}
+                            onChange={handleTempChange}
                             allowClear
                           >
                             <Option value={0}>10.0-15.0</Option>
@@ -293,7 +337,7 @@ function AddCrop() {
                         >
                           <Select
                             placeholder="Select a PH Value Range from the dropdown list"
-                            onChange={onGenderChange}
+                            onChange={handlePhChange}
                             allowClear
                           >
                             <Option value={0}>4.0-6.0</Option>
@@ -324,7 +368,7 @@ function AddCrop() {
                         >
                           <Select
                             placeholder="Select zone/s from the dropdown list"
-                            onChange={onGenderChange}
+                            onChange={handleZoneChange}
                             allowClear
                           >
                             <Option value={0}>Dry</Option>
@@ -348,7 +392,7 @@ function AddCrop() {
                         >
                           <Select
                             placeholder="Select Season/s from the dropdown list"
-                            onChange={onGenderChange}
+                            onChange={handleSeasonChange}
                             allowClear
                           >
                             <Option value={0}>Yala</Option>
