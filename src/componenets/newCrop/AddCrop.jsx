@@ -31,10 +31,6 @@ function AddCrop() {
   const [form] = Form.useForm();
   const MODEL_BASE_URL = configs.MODEL_BASE_URL;
 
-  const [api, contextHolder] = notification.useNotification();
-
-  const [cropsList, setCropsList] = useState([]);
-
   const layout = {
     labelCol: {
       span: 24,
@@ -49,39 +45,18 @@ function AddCrop() {
       span: 24,
     },
   };
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
-
-  const getCrops = () => {
-    console.log("Inside --> getCrops");
-    const config = {
-      headers: {
-        "Content-Type": "text/plain",
-      },
-    };
-    axios
-      .get(configs.MODEL_BASE_URL + "getCropsList", config)
-      .then((response) => {
-        console.log("Inside --> getCrops : response : " + response);
-        console.log(response);
-        setCropsList(response.data);
-      });
+  const handleFamilyChange = (e) => {
+    let index = e.nativeEvent.target.selectedIndex;
+    let label = e.nativeEvent.target[index].text;
+    let value = e.target.value;
+    console.log("handleFamilyChange:", label);
   };
 
   const onFinish = (values) => {
     console.log("Success:", values);
-    console.log("URL is :", MODEL_BASE_URL + "addAlert");
+    console.log("values.season :", values.season);
+    console.log("URL is :", MODEL_BASE_URL + "addNewCrop");
     const config = {
       headers: {
         "Content-Type": "text/plain",
@@ -92,11 +67,16 @@ function AddCrop() {
         MODEL_BASE_URL + "addAlert",
         {
           data: {
+            family: values.familyName,
+            ph: values.phVal,
+            season: values.season,
+            temperature: values.tempVal,
+            zone: values.zone,
+            familyText: values.familyName,
+            temperatureText: values.tempVal,
+            zoneText: values.zone,
+            seasonText: values.season,
             cropName: values.cropName,
-            affectedCrop: values.affectedCrop,
-            preventMethods: values.preventMethods,
-            otherDetails: values.otherDetails,
-            imageList: ["1", "2"],
           },
         },
         config
@@ -150,21 +130,8 @@ function AddCrop() {
     },
   };
 
-  useEffect(() => {
-    console.log("executed only once!");
-    getCrops();
-  }, [""]);
-
   return (
     <div>
-      <Modal
-        title="Add Note"
-        open={isModalOpen}
-        onOk={handleOk}
-        onCancel={handleCancel}
-      >
-        <TextArea rows={6} placeholder="Type your note here" />
-      </Modal>
       <CustomNavBar />
       <Layout className="layout" style={{ paddingTop: "10px" }}>
         <Content
@@ -194,7 +161,7 @@ function AddCrop() {
               </div>
               <Row justify={"center"} style={{ marginTop: "20px" }}>
                 <Col offset={5} span={12}>
-                  <Title style={{ width: "100%", justifyContent: "center"}}>
+                  <Title style={{ width: "100%", justifyContent: "center" }}>
                     Add Your New crop Here..
                   </Title>
                 </Col>
@@ -207,224 +174,190 @@ function AddCrop() {
                     name="control-hooks"
                     onFinish={onFinish}
                   >
-
                     <div className="row">
+                      <Form.Item name="cropName" label="New Crop Name">
+                        <Input.TextArea />
+                      </Form.Item>
 
-                    <Form.Item name="New Crop Name" label="New Crop Name">
-                      <Input.TextArea />
-                    </Form.Item>
-                    
-                    <div className="col">
-                                            
-                    
+                      <div className="col">
+                        <Form.Item
+                          name="familyName"
+                          label="Family Name"
+                          rules={[
+                            {
+                              required: true,
+                            },
+                          ]}
+                        >
+                          <Select
+                            showSearch
+                            placeholder="Select a family name from the dropdown list"
+                            onChange={handleFamilyChange}
+                            allowClear
+                          >
+                            <Option value={0}>Agaricaceae</Option>
+                            <Option value={1}>Alliaceae</Option>
+                            <Option value={2}>Amaranthaceae</Option>
+                            <Option value={3}>Amaryllidaceae</Option>
+                            <Option value={4}>Anacardiaceae</Option>
+                            <Option value={5}>Annonaceae</Option>
+                            <Option value={6}>Apiaceca</Option>
+                            <Option value={7}>Asteraceae</Option>
+                            <Option value={8}>Bombacaceae</Option>
+                            <Option value={9}>Brassicaceae</Option>
+                            <Option value={10}>Bromiliceae</Option>
+                            <Option value={11}>Cactaceae</Option>
+                            <Option value={12}>Caricaceae</Option>
+                            <Option value={13}>Chenopodiaceae</Option>
+                            <Option value={14}>Clusiaceae</Option>
+                            <Option value={15}>Convolvulaceae</Option>
+                            <Option value={16}>Cucurbitaceae</Option>
+                            <Option value={17}>Euphorbiaceae</Option>
+                            <Option value={18}>Fabaceae</Option>
+                            <Option value={19}>Flacourtiaceae</Option>
+                            <Option value={20}>Graminae</Option>
+                            <Option value={21}>Lauraceae</Option>
+                            <Option value={22}>Malvaceca</Option>
+                            <Option value={23}>Mertaceae</Option>
+                            <Option value={24}>Moraceae</Option>
+                            <Option value={25}>Musaceae</Option>
+                            <Option value={26}>Myristiccaceae</Option>
+                            <Option value={27}>Myrtaceae</Option>
+                            <Option value={28}>Orchidaceae</Option>
+                            <Option value={29}>Oxaliadaceae</Option>
+                            <Option value={31}>Passifloraciae</Option>
+                            <Option value={32}>Pedaliaceae</Option>
+                            <Option value={33}>Piperaceae</Option>
+                            <Option value={34}>Poaceae</Option>
+                            <Option value={35}>Punicaceae</Option>
+                            <Option value={36}>Rubiaceae</Option>
+                            <Option value={37}>Rutaceae</Option>
+                            <Option value={38}>Sapindaceae</Option>
+                            <Option value={39}>Sapotaceae</Option>
+                            <Option value={40}>Solanaceae</Option>
+                            <Option value={41}>Sterculiaceae</Option>
+                            <Option value={42}>Vitaceae</Option>
+                            <Option value={43}>Zingiberaceae</Option>
+                          </Select>
+                        </Form.Item>
 
-                    <Form.Item
-                      name="familyName"
-                      label="Family Name"
-                      rules={[
-                        {
-                          required: true,
-                        },
-                      ]}
-                    >
-                      <Select
-                        placeholder="Select a family name from the dropdown list"
-                        onChange={onGenderChange}
-                        allowClear
-                      >
-                     
-                          <Option value={"0"}>"Agaricaceae"</Option>
-                          <Option value={"1"}>"Alliaceae"</Option>
-                          <Option value={"2"}>"Amaranthaceae"</Option>
-                          <Option value={"3"}>"Amaryllidaceae"</Option>
-                          <Option value={"4"}>"Anacardiaceae"</Option>
-                          <Option value={"5"}>"Annonaceae"</Option>
-                          <Option value={"6"}>"Apiaceca"</Option>
-                          <Option value={"7"}>"Asteraceae"</Option>
-                          <Option value={"8"}>"Bombacaceae"</Option>
-                          <Option value={"9"}>"Brassicaceae"</Option>
-                          <Option value={"10"}>"Bromiliceae"</Option>
-                          <Option value={"11"}>"Cactaceae"</Option>
-                          <Option value={"12"}>"Caricaceae"</Option>
-                          <Option value={"13"}>"Chenopodiaceae"</Option>
-                          <Option value={"14"}>"Clusiaceae"</Option>
-                          <Option value={"15"}>"Convolvulaceae"</Option>
-                          <Option value={"16"}>"Cucurbitaceae"</Option>
-                          <Option value={"17"}>"Euphorbiaceae"</Option>
-                          <Option value={"18"}>"Fabaceae"</Option>
-                          <Option value={"19"}>"Flacourtiaceae"</Option>
-                          <Option value={"20"}>"Graminae"</Option>
-                          <Option value={"21"}>"Lauraceae"</Option>
-                          <Option value={"22"}>"Malvaceca"</Option>
-                          <Option value={"23"}>"Mertaceae"</Option>
-                          <Option value={"24"}>"Moraceae"</Option>
-                          <Option value={"25"}>"Musaceae"</Option>
-                          <Option value={"26"}>"Myristiccaceae"</Option>
-                          <Option value={"27"}>"Myrtaceae"</Option>
-                          <Option value={"28"}>"Orchidaceae"</Option>
-                          <Option value={"29"}>"Oxaliadaceae"</Option>
-                          <Option value={"31"}>"Passifloraciae"</Option>
-                          <Option value={"32"}>"Pedaliaceae"</Option>
-                          <Option value={"33"}>"Piperaceae"</Option>
-                          <Option value={"34"}>"Poaceae"</Option>
-                          <Option value={"35"}>"Punicaceae"</Option>
-                          <Option value={"36"}>"Rubiaceae"</Option>
-                          <Option value={"37"}>"Rutaceae"</Option>
-                          <Option value={"38"}>"Sapindaceae"</Option>
-                          <Option value={"39"}>"Sapotaceae"</Option>
-                          <Option value={"40"}>"Solanaceae"</Option>
-                          <Option value={"41"}>"Sterculiaceae"</Option>
-                          <Option value={"42"}>"Vitaceae"</Option>
-                          <Option value={"43"}>"Zingiberaceae"</Option>
+                        <Form.Item
+                          name="tempVal"
+                          label="Temperature Range"
+                          rules={[
+                            {
+                              required: true,
+                            },
+                          ]}
+                        >
+                          <Select
+                            showSearch
+                            placeholder="Select a Temperature Range from the dropdown list"
+                            onChange={onGenderChange}
+                            allowClear
+                          >
+                            <Option value={0}>10.0-15.0</Option>
+                            <Option value={1}>10.0-20.0</Option>
+                            <Option value={2}>10.0-25.0</Option>
+                            <Option value={3}>10.0-30.0</Option>
+                            <Option value={4}>10.0-40.0</Option>
+                            <Option value={5}>15.0-20.0</Option>
+                            <Option value={6}>15.0-25.0</Option>
+                            <Option value={7}>15.0-30.0</Option>
+                            <Option value={8}>15.0-40.0</Option>
+                            <Option value={9}>20.0-25.0</Option>
+                            <Option value={10}>20.0-30.0</Option>
+                            <Option value={11}>20.0-35.0</Option>
+                            <Option value={12}>20.0-40.0</Option>
+                            <Option value={13}>25.0-30.0</Option>
+                            <Option value={14}>25.0-35.0</Option>
+                            <Option value={15}>25.0-40.0</Option>
+                            <Option value={16}>30.0-35.0</Option>
+                            <Option value={17}>Lesss than 20</Option>
+                            <Option value={18}>Lesss than 24</Option>
+                            <Option value={19}>Lesss than 30</Option>
+                            <Option value={20}>Lesss than 46</Option>
+                            <Option value={21}>Greater than 20</Option>
+                            <Option value={22}>Greater than 27</Option>
+                          </Select>
+                        </Form.Item>
 
-                          
-                          
+                        <Form.Item
+                          name="phVal"
+                          label="PH Value"
+                          rules={[
+                            {
+                              required: true,
+                            },
+                          ]}
+                        >
+                          <Select
+                            placeholder="Select a PH Value Range from the dropdown list"
+                            onChange={onGenderChange}
+                            allowClear
+                          >
+                            <Option value={0}>4.0-6.0</Option>
+                            <Option value={1}>4.0-9.0</Option>
+                            <Option value={2}>5.0-10.0</Option>
+                            <Option value={3}>5.0-6.0</Option>
+                            <Option value={4}>5.0-7.0</Option>
+                            <Option value={5}>5.0-8.0</Option>
+                            <Option value={6}>6.0-10.0</Option>
+                            <Option value={7}>6.0-6.5</Option>
+                            <Option value={8}>6.0-6.5</Option>
+                            <Option value={9}>6.0-8.0</Option>
+                            <Option value={10}>6.0-9.0</Option>
+                            <Option value={11}>Lesss than 7.0</Option>
+                          </Select>
+                        </Form.Item>
+                      </div>
 
-                        
-                      </Select>
-                    </Form.Item>
+                      <div className="col">
+                        <Form.Item
+                          name="zone"
+                          label="Zone/s"
+                          rules={[
+                            {
+                              required: true,
+                            },
+                          ]}
+                        >
+                          <Select
+                            placeholder="Select zone/s from the dropdown list"
+                            onChange={onGenderChange}
+                            allowClear
+                          >
+                            <Option value={0}>Dry</Option>
+                            <Option value={1}>Wet</Option>
+                            <Option value={2}>Intermediate</Option>
+                            <Option value={3}>Dry & Wet</Option>
+                            <Option value={4}>Dry & Intermediate</Option>
+                            <Option value={5}>Wet & Intermediate</Option>
+                            <Option value={6}>Dry & Wet & Intermediate</Option>
+                          </Select>
+                        </Form.Item>
 
-                    <Form.Item
-                      name="tempVal"
-                      label="Temperature Range"
-                      rules={[
-                        {
-                          required: true,
-                        },
-                      ]}
-                    >
-                      <Select
-                        placeholder="Select a Temperature Range from the dropdown list"
-                        onChange={onGenderChange}
-                        allowClear
-                      >
-                        
-                          <Option value={"0"}>"10.0-15.0"</Option>
-                          <Option value={"1"}>"10.0-20.0"</Option>
-                          <Option value={"2"}>"10.0-25.0"</Option>
-                          <Option value={"3"}>"10.0-30.0"</Option>
-                          <Option value={"4"}>"10.0-40.0"</Option>
-                          <Option value={"5"}>"15.0-20.0"</Option>
-                          <Option value={"6"}>"15.0-25.0"</Option>
-                          <Option value={"7"}>"15.0-30.0"</Option>
-                          <Option value={"8"}>"15.0-40.0"</Option>
-                          <Option value={"9"}>"20.0-25.0"</Option>
-                          <Option value={"10"}>"20.0-30.0"</Option>
-                          <Option value={"11"}>"20.0-35.0"</Option>
-                          <Option value={"12"}>"20.0-40.0"</Option>
-                          <Option value={"13"}>"25.0-30.0"</Option>
-                          <Option value={"14"}>"25.0-35.0"</Option>
-                          <Option value={"15"}>"25.0-40.0"</Option>
-                          <Option value={"16"}>"30.0-35.0"</Option>
-                          <Option value={"17"}>"Lesss than 20"</Option>
-                          <Option value={"18"}>"Lesss than 24"</Option>
-                          <Option value={"19"}>"Lesss than 30"</Option>
-                          <Option value={"20"}>"Lesss than 46"</Option>
-                          <Option value={"21"}>"Greater than 20"</Option>
-                          <Option value={"22"}>"Greater than 27"</Option>
-                        
-                      </Select>
-                    </Form.Item>
-
-
-                    <Form.Item
-                      name="phVal"
-                      label="PH Value"
-                      rules={[
-                        {
-                          required: true,
-                        },
-                      ]}
-                    >
-                      <Select
-                        placeholder="Select a PH Value Range from the dropdown list"
-                        onChange={onGenderChange}
-                        allowClear
-                      >
-                          <Option value={"0"}>"4.0-6.0"</Option>
-                          <Option value={"1"}>"4.0-9.0"</Option>
-                          <Option value={"2"}>"5.0-10.0"</Option>
-                          <Option value={"3"}>"5.0-6.0"</Option>
-                          <Option value={"4"}>"5.0-7.0"</Option>
-                          <Option value={"5"}>"5.0-8.0"</Option>
-                          <Option value={"6"}>"6.0-10.0"</Option>
-                          <Option value={"7"}>"6.0-6.5"</Option>
-                          <Option value={"8"}>"6.0-6.5"</Option>
-                          <Option value={"9"}>"6.0-8.0"</Option>
-                          <Option value={"10"}>"6.0-9.0"</Option>
-                          <Option value={"11"}>"Lesss than 7.0"</Option>
-
-                      </Select>
-                    </Form.Item>
+                        <Form.Item
+                          name="season"
+                          label="Season/s"
+                          rules={[
+                            {
+                              required: true,
+                            },
+                          ]}
+                        >
+                          <Select
+                            placeholder="Select Season/s from the dropdown list"
+                            onChange={onGenderChange}
+                            allowClear
+                          >
+                            <Option value={0}>Yala</Option>
+                            <Option value={1}>Maha</Option>
+                            <Option value={2}>Yala & Maha</Option>
+                          </Select>
+                        </Form.Item>
+                      </div>
                     </div>
-
-
-                    <div className="col">
-                    
-
-
-                    <Form.Item
-                      name="zone"
-                      label="Zone/s"
-                      rules={[
-                        {
-                          required: true,
-                        },
-                      ]}
-                    >
-                      <Select
-                        placeholder="Select zone/s from the dropdown list"
-                        onChange={onGenderChange}
-                        allowClear
-                      >
-                          <Option value={"0"}>"Dry"</Option>
-                          <Option value={"1"}>"Wet"</Option>
-                          <Option value={"2"}>"Intermediate"</Option>
-                          <Option value={"3"}>"Dry & Wet"</Option>
-                          <Option value={"4"}>"Dry & Intermediate"</Option>
-                          <Option value={"5"}>"Wet & Intermediate"</Option>
-                          <Option value={"6"}>"Dry & Wet & Intermediate"</Option>
-
-                      </Select>
-
-                    </Form.Item>
-
-                    <Form.Item
-                      name="season"
-                      label="Season/s"
-                      rules={[
-                        {
-                          required: true,
-                        },
-                      ]}
-                    >
-                      <Select
-                        placeholder="Select Season/s from the dropdown list"
-                        onChange={onGenderChange}
-                        allowClear
-                      >
-                          <Option value={"0"}>"Yala"</Option>
-                          <Option value={"1"}>"Maha"</Option>
-                          <Option value={"2"}>"Yala & Maha"</Option>
-
-                      </Select>
-                    </Form.Item>
-
-                    
-
-                    </div>
-                    </div>
-
-                    <Button block icon={<FileOutlined />}>
-                      <span className="click" onClick={showModal}>
-                        Get Predictions
-                      </span>
-                    </Button>
-
-
-                
-
-                    
 
                     <Form.Item {...tailLayout}>
                       <Row style={{ marginTop: "30px" }}>
@@ -459,4 +392,4 @@ function AddCrop() {
   );
 }
 
-export default AddCrop
+export default AddCrop;
